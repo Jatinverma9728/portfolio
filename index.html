@@ -167,7 +167,8 @@
                         <a href="https://github.com/dashboard" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://x.com/JatinVerma9728" target="_blank"><i
                                 class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/iamjatin_vrma?igsh=aWU5MHFwcXY4Z2Vl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/iamjatin_vrma?igsh=aWU5MHFwcXY4Z2Vl"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/jatin-verma-448600291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                             target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
@@ -194,20 +195,20 @@
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cousor-outline" data-cursor-outline></div>
     <script>
- const cursordot = document.querySelector("[data-cursor-dot]");
- const cursorOutline = document.querySelector("[data-cursor-outline]");
- 
- window.addEventListener("mousemove", function(e){
-     const posX = e.clientX;
-     const posY = e.clientY;
- cursordot.style.left = `${posX}px`;
- cursordot.style.top = `${posY}px`;
- cursorOutline.animate({
-     left: `${posX}px`,
-     top: `${posY}px`
- } , { duration: 500, fill:"forwards"});
-     
- });
+        const cursordot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+        window.addEventListener("mousemove", function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            cursordot.style.left = `${posX}px`;
+            cursordot.style.top = `${posY}px`;
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+
+        });
     </script>
 
 
