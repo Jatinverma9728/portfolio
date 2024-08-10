@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .cursor{
-position: fixed;
-width: 50px;
-height: 50px;
-border: 1px solid #c6c6c6;
-border-radius: 50%;
-left: 0;
-top: 0;
-pointer-events: none;
-transform: translate(-50%, -50%);
+        body{
+            cursor: none;
         }
-        .cursor2{
-position: fixed;
-width: 8px;
-height: 8px;
-border: 1px solid #c6c6c6;
-border-radius: 50%;
-left: 0;
-top: 0;
-pointer-events: none;
-transform: translate(-50%, -50%);
+        .cursor-dot{
+            width: 5px;
+            height: 5px;
+            background-color: rgb(0, 0, 0) ;
         }
+        .cousor-outline{
+            width: 30px;
+            height: 30px;
+           border: 2px solid hsla(0, 100%, 44%, 0.5);
+        }
+        .cursor-dot,
+        .cousor-outline{
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            z-index: 1;
+            pointer-events: none;     
+           }
+
     </style>
 </head>
+
 <body>
-   <div class="cursor"></div>
-   <div class="cursor2"></div>
+   <div class="cursor-dot" data-cursor-dot></div>
+   <div class="cousor-outline" data-cursor-outline></div>
    <script>
-    var cursor = document.querySelector(".cursor");
-    var cursor2 = document.querySelector(".cursor2");
-document.addEventListener("mousemove",function(e){
-cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-})
+const cursordot = document.querySelector("[data-cursor-dot]");
+const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+window.addEventListener("mousemove", function(e){
+    const posX = e.clientX;
+    const posY = e.clientY;
+cursordot.style.left = `${posX}px`;
+cursordot.style.top = `${posY}px`;
+cursorOutline.animate({
+    left: `${posX}px`,
+    top: `${posY}px`
+} , { duration: 500, fill:"forwards"});
+    
+});
    </script>
 </body>
+
 </html>

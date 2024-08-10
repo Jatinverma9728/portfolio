@@ -423,25 +423,26 @@ nav .fa-solid {
 }
 
 /* --------------mouse-------------- */
-.cursor {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ff004f;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
+body{
+  cursor: none;
 }
-.cursor2 {
-  position: fixed;
-  width: 8px;
-  height: 8px;
-  /* border: 1px solid #; */
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: rgb(0, 0, 0) ;
 }
+.cousor-outline{
+  width: 30px;
+  height: 30px;
+ border: 2px solid hsla(0, 100%, 44%, 0.5);
+}
+.cursor-dot,
+.cousor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;     
+ }
