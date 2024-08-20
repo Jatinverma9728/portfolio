@@ -195,45 +195,20 @@
 
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cousor-outline" data-cursor-outline></div>
-    <script>
-        const cursordot = document.querySelector("[data-cursor-dot]");
-        const cursorOutline = document.querySelector("[data-cursor-outline]");
-
-        window.addEventListener("mousemove", function (e) {
-            const posX = e.clientX;
-            const posY = e.clientY;
-            cursordot.style.left = `${posX}px`;
-            cursordot.style.top = `${posY}px`;
-            cursorOutline.animate({
-                left: `${posX}px`,
-                top: `${posY}px`
-            }, { duration: 500, fill: "forwards" });
-
-        });
-    </script>
 
 
 
+<!-- ------------------------SCRIPT SECTION------------------------- -->
+
+
+
+    <script src="mousecursor.js"></script>
     <script src="script.js"></script>
     <script src="script2.js"></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx5pl6IvJ4yF3G8WDEdvyqFFMNSeYwJuy2wYbtQrwcKVzR91muFw6nzIuK9p3Q1W4ka/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+    <script src="googlesheetfetch.js"></script>
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+
+    
 </body>
 
 </html>
