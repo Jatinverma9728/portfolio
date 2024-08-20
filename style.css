@@ -429,15 +429,12 @@ body {
 .cursor-dot {
   width: 5px;
   height: 5px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 .cousor-outline {
   width: 30px;
   height: 30px;
-  border: 3px solid #2dffc4;
-  -webkit-box-shadow:0px 0px 78px 21px rgba(45,255,196,0.59);
-  -moz-box-shadow: 0px 0px 78px 21px rgba(45,255,196,0.59);
-  box-shadow: 0px 0px 78px 21px rgba(45,255,196,0.59);
+  border: 3px solid #ff004f;
 }
 .cursor-dot,
 .cousor-outline {
