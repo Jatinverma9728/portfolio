@@ -414,10 +414,6 @@ nav .fa-solid {
   .copyright {
     font-size: 14px;
   }
-#body{
-  cursor: none;
-  pointer-events:none ;
-}
 }
 
 #msg {
