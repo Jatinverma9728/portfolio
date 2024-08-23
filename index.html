@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="imageslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/92d5a0c82a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -155,8 +157,49 @@
             <!-- <a href="#" class="btn">See Nore</a> -->
         </div>
     </div>
-    <!-- ----------------------Contact--------------------- -->
 
+    <!-- ---------------------Mini Projects---------------- -->
+
+    <div class="body">
+        <div class="container swiper">
+            <h1 class="subtitel">My Work</h1>
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="images/img-1.jpg" alt="BG Image" class="user-image">
+                        <h2 class="user-name">JAtin</h2>
+                        <p class="user-profession">Lorem ipsum dolor</p>
+                        <button class="message-button">Message ME</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="images/img-2.jpg" alt="BG Image" class="user-image">
+                        <h2 class="user-name">JAtin</h2>
+                        <p class="user-profession">Lorem ipsum dolor</p>
+                        <button class="message-button">Message ME</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="images/img-3.jpg" alt="BG Image" class="user-image">
+                        <h2 class="user-name">JAtin</h2>
+                        <p class="user-profession">Lorem ipsum dolor</p>
+                        <button class="message-button">Message ME</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="images/img-4.jpg" alt="BG Image" class="user-image">
+                        <h2 class="user-name">JAtin</h2>
+                        <p class="user-profession">Lorem ipsum dolor</p>
+                        <button class="message-button">Message ME</button>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------------Contact--------------------- -->
 
     <div id="contact">
         <div class="container">
@@ -203,11 +246,12 @@
 
 
 
-    <script src="mousecursor.js"></script>
-    <script src="sidemenu.js"></script>
-    <script src="experience,edu.js"></script>
-    <script src="googlesheetfetch.js"></script>
-
+    <script src="sitejs/experience,edu.js"></script>
+    <script src="sitejs/googlesheetfetch.js"></script>
+    <script src="sitejs/mousecursor.js"></script>
+    <script src="sitejs/sidemenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="imgsliderscript.js"></script>
 
 
 </body>
