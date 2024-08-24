@@ -1,5 +1,5 @@
 const swiper = new Swiper(".slider-wrapper", {
-    loop: true,
+    // loop: true,
     grabCursor: true,
     spaceBetween: 30,
   
@@ -28,4 +28,5 @@ const swiper = new Swiper(".slider-wrapper", {
       },
     },
   });
+  
   

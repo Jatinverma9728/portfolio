@@ -9,12 +9,14 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("images/bg.jpg");
+  background: url("images/bg.jpg") ;
+  
 }
 .slider-wrapper {
   overflow: hidden;
   max-width: 1200px;
   margin: 0 70px 55px;
+  
 }
 .card-list .card-item {
   color: #ffffff;
@@ -28,6 +30,7 @@
   justify-content: center;
   flex-direction: column;
   backdrop-filter: blur(30px);
+ 
 }
 .card-list .card-item .user-image {
   width: 150px;
@@ -52,6 +55,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   background: #ffffff;
+  border-radius: 15px;
 }
 .card-list .card-item .message-button:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -63,15 +67,15 @@
 }
 .slider-wrapper .swiper-pagination-bullet {
   background: #fff;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
 }
 .slider-wrapper .swiper-slide-button {
-  color: #fff;
+  color: #c51717;
   margin-top: -50px;
 }
 .slider-wrapper .swiper-slide-button:hover {
-  color: #4658ff;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   .slider-wrapper {
@@ -83,4 +87,8 @@
 }
 .subtitel {
   color: white;
+}
+.body h1{
+  margin-bottom: 50px;
+
 }
