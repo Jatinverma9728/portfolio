@@ -1,17 +1,23 @@
-document.getElementById("toggleButton").addEventListener("click", function () {
-  var moreText = document.getElementById("moreText");
-  var dots = document.getElementById("dots");
-  var button = document.getElementById("toggleButton");
+document.querySelectorAll(".read-more-btn").forEach(button => {
+  button.addEventListener("click", event => {
+    const currentBtn = event.target;
+    const currentText = currentBtn.previousElementSibling.querySelector(".read-more-text");
 
-  if (moreText.classList.contains("hidden")) {
-    moreText.classList.remove("hidden");
-    moreText.classList.add("show");
-    dots.classList.add("hidden");
-    button.textContent = "Read Less";
-  } else {
-    moreText.classList.add("hidden");
-    moreText.classList.remove("show");
-    dots.classList.remove("hidden");
-    button.textContent = "Read More";
-  }
+    if (currentText.style.display === "inline") {
+      // Hide the text with a smooth transition
+      currentText.style.opacity = 0;
+      setTimeout(() => {
+        currentText.style.display = "none";
+      }, 300); // Wait for the transition to complete
+    } else {
+      // Show the text with a smooth transition
+      currentText.style.display = "inline";
+      setTimeout(() => {
+        currentText.style.opacity = 1;
+      }, 0); // Start transition immediately
+    }
+
+    // Toggle button text
+    currentBtn.textContent = currentText.style.display === "inline" ? "Read Less..." : "Read More...";
+  });
 });

@@ -1,39 +1,42 @@
-#extra {
-  display: none;
-}
-.p {
-  font-family: "Poppins", sans-serif;
-  display: inline;
-}
-
-input[type="checkbox"] {
-  height: 2em;
-  display: block;
-  appearance: none;
-}
-.dots{
-  display: inline;
+.read-more-container {
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  align-items: center;
+  justify-content: center;
 }
 
-label {
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  padding: 5px;
-  background-color: transparent;
-  color: #ffffff;
+.paracontainer {
+  /* padding: 2rem; */
+  background:transparent;
+  border-radius: 2px;
+  line-height: 1.4rem;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); */
+  margin-bottom: 1rem; /* Add some margin between cards */
+}
+
+.read-more-btn {
+  color: #0984e3;
   cursor: pointer;
-  border-radius: 0.5em;
 }
-label:before {
-  content: "Read More";
-}
-input[type="checkbox"]:checked ~ label:before {
-  content: "Read Less";
-}
-.dots:has(~ input[type="checkbox"]:checked) {
+
+.read-more-text {
   display: none;
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
-#extra:has(~ input[type="checkbox"]:checked) {
- 
+
+.read-more-text--show {
   display: inline;
+  opacity: 1; /* Transition to opacity 1 */
+}
+.message-button{
+  width: 150px;
+}
+.user-name{
+  font-size: 20px;
+  margin-bottom: -20px;
 }
