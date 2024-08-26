@@ -403,7 +403,7 @@ nav .fa-solid {
   }
   .about-col-1,
   .about-col-2 {
-    /* flex-basis: 100%; */
+    flex-basis: 100%;
     
   }
   .about-col-1 {
