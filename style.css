@@ -73,7 +73,7 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ababab;
-  background: url(images/bg.jpg) center;
+  background: url(images/bg.jpg) no-repeat center;
 }
 .row {
   display: flex;
@@ -148,7 +148,7 @@ nav ul li a:hover::after {
 
 #services {
   padding: 30px 0;
-  background: url(images/bg.jpg);
+  background: url(images/bg1.png) no-repeat center;
 }
 .services-list {
   display: grid;
@@ -189,9 +189,9 @@ nav ul li a:hover::after {
   box-shadow: 0px 0px 87px 1px rgba(255, 0, 81, 0.66);
 }
 /* ----------Portfolio---------*/
-#portfolio{
+#portfolio {
   padding: 50px 0;
-  background: url(images/bg.jpg) center;
+  background: url(images/bg3.png) no-repeat ;
 }
 .work-list {
   display: grid;
@@ -279,7 +279,6 @@ nav ul li a:hover::after {
 
 #contact p {
   color: white;
-  
 }
 
 .contact-left {
@@ -363,7 +362,7 @@ nav .fa-solid {
   #header {
     background-image: url(images/phone-background.png);
   }
-  body{
+  body {
     cursor: none;
   }
   .header-text {
@@ -404,10 +403,20 @@ nav .fa-solid {
   }
   .about-col-1,
   .about-col-2 {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+    
   }
   .about-col-1 {
     margin-bottom: 30px;
+    display:flex;
+    justify-content: center;
+  }
+  .about-col-1  img{
+    border: 3px solid red;
+    width: 555px;
+    height: auto;
+    display:flex;
+    justify-content: center;
   }
   .about-col-2 {
     font-size: 14px;
@@ -423,7 +432,7 @@ nav .fa-solid {
   .copyright {
     font-size: 14px;
   }
-  .body .subtitel{
+  .body .subtitel {
     margin-left: 70px;
   }
 }
