@@ -73,7 +73,7 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ababab;
-  background: url(images/bg.jpg) no-repeat center;
+  background: url(images/bg.jpg) center/cover;
 }
 .row {
   display: flex;
@@ -148,7 +148,7 @@ nav ul li a:hover::after {
 
 #services {
   padding: 30px 0;
-  background: url(images/bg1.png) no-repeat center;
+  background: url(images/bg1.png) center/cover;
 }
 .services-list {
   display: grid;
@@ -191,7 +191,7 @@ nav ul li a:hover::after {
 /* ----------Portfolio---------*/
 #portfolio {
   padding: 50px 0;
-  background: url(images/bg3.png) no-repeat ;
+  background: url(images/bg3.png) center/cover ;
 }
 .work-list {
   display: grid;
@@ -412,11 +412,12 @@ nav .fa-solid {
     justify-content: center; */
   }
   .about-col-1  img{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* width: auto; */
-    height: 50px;
-    display:flex;
-    justify-content: center;
+    object-fit: cover;
+    height: 500px;
+    /* display:flex;
+    justify-content: center; */
   }
   .about-col-2 {
     font-size: 14px;
