@@ -411,13 +411,13 @@ nav .fa-solid {
     /* display:flex;
     justify-content: center; */
   }
-  /* .about-col-1  img{
+  .about-col-1  img{
     border: 3px solid red;
     width: 555px;
     height: auto;
     display:flex;
     justify-content: center;
-  } */
+  }
   .about-col-2 {
     font-size: 14px;
   }
