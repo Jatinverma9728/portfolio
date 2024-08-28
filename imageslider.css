@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("images/bg2.png") no-repeat ;
+  background: url("images/bg2.png") center/cover;
   
 }
 .slider-wrapper {
