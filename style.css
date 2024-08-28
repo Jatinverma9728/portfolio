@@ -408,8 +408,8 @@ nav .fa-solid {
   }
   .about-col-1 {
     margin-bottom: 30px;
-    display:flex;
-    justify-content: center;
+    /* display:flex;
+    justify-content: center; */
   }
   .about-col-1  img{
     border: 3px solid red;
