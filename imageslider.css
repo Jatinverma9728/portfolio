@@ -10,13 +10,14 @@
   justify-content: center;
   min-height: 100vh;
   background: url("images/bg2.png") center/cover;
-  
+  animation: appears linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .slider-wrapper {
   overflow: hidden;
   max-width: 1200px;
   margin: 0 70px 55px;
-  
 }
 .card-list .card-item {
   color: #ffffff;
@@ -30,7 +31,6 @@
   justify-content: center;
   flex-direction: column;
   backdrop-filter: blur(30px);
- 
 }
 .card-list .card-item .user-image {
   width: 150px;
@@ -88,7 +88,6 @@
 .subtitel {
   color: white;
 }
-.body h1{
+.body h1 {
   margin-bottom: 50px;
-
 }
