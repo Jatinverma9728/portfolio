@@ -19,11 +19,11 @@ tl.from(".header-text span", {
 });
 
 gsap.to("#page2 h1",{
-transform:"translateX(-150%)",
+transform:"translateX(-170%)",
 scrollTrigger:{
     trigger:"#page2",
     scroller:"body",
-    markers:true,
+    // markers:true,
     start:"top 0%",
     end:"top -150%",
     scrub:2,

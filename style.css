@@ -501,8 +501,9 @@ body {
   width: 100%;
   background-color:#c3c3c3;
   /* padding: 5vw 0; */
-  /* /* display: flex; */
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
   /* justify-content: center; */
   /* max-width: 100%;  */
 }
