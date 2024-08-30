@@ -448,7 +448,15 @@ nav .fa-solid {
   .body .subtitel {
     margin-left: 70px;
   }
+  #page2{
+    display: none;
+  }
+  #page2 h1{
+    display: none;
+   }
 }
+
+
 
 #msg {
   color: #61b752;
