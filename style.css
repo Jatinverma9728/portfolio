@@ -10,6 +10,7 @@ html {
 body {
   background: #080808;
   color: fff;
+  overflow-x: hidden;
 }
 #header {
   width: 100%;
@@ -459,15 +460,16 @@ nav .fa-solid {
 body {
   cursor: none;
 }
-.cursor-dot {
+/* .cursor-dot {
   width: 5px;
   height: 5px;
   background-color: rgb(255, 255, 255);
-}
+} */
 .cousor-outline {
-  width: 30px;
-  height: 30px;
-  border: 3px solid #ff004f;
+  width: 20px;
+  height: 20px;
+  background-color: #3f3d3d;
+  /* border: 3px solid #ff004f; */
 }
 .cursor-dot,
 .cousor-outline {
@@ -494,3 +496,19 @@ body {
 }
 
 
+#page2{
+  height: 100%;
+  width: 100%;
+  background-color:#c3c3c3;
+  /* padding: 5vw 0; */
+  /* /* display: flex; */
+  align-items: center;
+  /* justify-content: center; */
+  /* max-width: 100%;  */
+}
+#page2 h1{
+  font-size: 40vw;
+  font-family: Poppins;
+  text-transform: uppercase;
+  font-weight: 600;
+}
