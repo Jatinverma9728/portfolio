@@ -18,15 +18,27 @@ tl.from(".header-text span", {
   duration: 0.2,
 });
 
-gsap.to("#page2 h1",{
-transform:"translateX(-170%)",
-scrollTrigger:{
-    trigger:"#page2",
-    scroller:"body",
+gsap.to("#page2 h1", {
+  transform: "translateX(-170%)",
+  scrollTrigger: {
+    trigger: "#page2",
+    scroller: "body",
     // markers:true,
-    start:"top 0%",
-    end:"top -150%",
-    scrub:2,
-    pin:true,
-}
-})
+    start: "top 0%",
+    end: "top -150%",
+    scrub: 2,
+    pin: true,
+  },
+});
+
+gsap.from("#about", {
+  transform: "translateY(170%)",
+  scrollTrigger: {
+    opacity:1,
+    // markers: true,
+    start: "top 50%",
+    end: "top -50%",
+    scrub: 2,
+    pin: true,
+  },
+});

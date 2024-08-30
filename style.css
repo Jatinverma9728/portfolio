@@ -75,9 +75,9 @@ nav ul li a:hover::after {
   padding: 80px 0;
   color: #ababab;
   background: url(images/bg.jpg) center/cover;
-  animation: appear linear;
+  /* animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 40%; */
 }
 .row {
   display: flex;
