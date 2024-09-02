@@ -352,8 +352,10 @@ form .btn2 {
 
 .copyright {
   width: 100%;
-  text-align: center;
+  color: rgb(255, 37, 37);
   padding: 25px 0;
+  display: flex;
+  justify-content: center;
   background: #262626;
   font-weight: 300;
   margin-top: 20px;
