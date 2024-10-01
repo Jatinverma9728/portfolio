@@ -355,7 +355,7 @@ form .btn2 {
   color: rgb(255, 37, 37);
   padding: 25px 0;
   display: flex;
- text-align: center;
+  text-align: center;
   background: #262626;
   font-weight: 300;
   margin-top: 20px;
@@ -450,15 +450,13 @@ nav .fa-solid {
   .body .subtitel {
     margin-left: 70px;
   }
-  #page2{
+  #page2 {
     display: none;
   }
-  #page2 h1{
+  #page2 h1 {
     display: none;
-   }
+  }
 }
-
-
 
 #msg {
   color: #61b752;
