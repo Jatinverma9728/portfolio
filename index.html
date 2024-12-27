@@ -1,293 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="images/JV Logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="images/JV Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="imageslider.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="para.css">
-    <script src="https://kit.fontawesome.com/92d5a0c82a.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="imageslider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="para.css" />
+    <script
+      src="https://kit.fontawesome.com/92d5a0c82a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body oncontextmenu="return false" id="body">
+  <body oncontextmenu="return false" id="body">
     <div id="header">
-        <div class="container">
-            <nav><img src="images/logo.png" alt="" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" id="menu-icons" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" id="menu-icons" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Web Developer/Designer</p>
-                <h1>Hi, I'm <span>Jatin</span> <br> Verma From Bhiwani</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-solid fa-xmark"
+              id="menu-icons"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i class="fa-solid fa-bars" id="menu-icons" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer/Designer</p>
+          <h1>
+            Hi, I'm <span>Jatin</span> <br />
+            Verma From Bhiwani
+          </h1>
         </div>
+      </div>
     </div>
     <!-- -----------------About Section------------------ -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitel">About Me </h1>
-                    <p>I'm Jatin, a passionate and dedicated BCA student in my third year, with a strong foundation in
-                        software development and a keen interest in becoming a successful software engineer. My journey
-                        in the tech world began with a fascination for solving problems and creating solutions that make
-                        life easier.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
-
-                            <li><span>App Development</span><br>Bulding Android/IOS Apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Work At Home</span><br>As A Freelancer since 2 Years</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Bachlors In Computer Application (BCA)</span><br>From Vaish College Affilated From
-                                CBLU Bhiwani</li>
-
-                            <li><span>Senior Secondary</span><br>Govt. Sr.Sec.School,Kaunt</li>
-
-                            <li><span>Matric</span><br>From B.S International School Sanga</li>
-                            <li><span>More</span><br>My academic journey has always been driven by curiosity and a
-                                desire to understand the underlying principles of technology.</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitel">About Me</h1>
+            <p>
+              I'm Jatin, a passionate and dedicated BCA student in my third
+              year, with a strong foundation in software development and a keen
+              interest in becoming a successful software engineer. My journey in
+              the tech world began with a fascination for solving problems and
+              creating solutions that make life easier.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li><span>UI/UX</span><br />Design Web/App Interfaces</li>
+
+                <li>
+                  <span>App Development</span><br />Bulding Android/IOS Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Work At Home</span><br />As A Freelancer since 2 Years
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachlors In Computer Application (BCA)</span><br />From
+                  Vaish College Affilated From CBLU Bhiwani
+                </li>
+
+                <li>
+                  <span>Senior Secondary</span><br />Govt. Sr.Sec.School,Kaunt
+                </li>
+
+                <li>
+                  <span>Matric</span><br />From B.S International School Sanga
+                </li>
+                <li>
+                  <span>More</span><br />My academic journey has always been
+                  driven by curiosity and a desire to understand the underlying
+                  principles of technology.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--  -->
     <!-- ----------------------------Services------------- -->
     <div id="services">
-        <div class="container">
-            <h1 class="subtitel">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development
-                    </h2>
-                    <p>With a year of hands-on experience in web development, I've honed my skills in creating dynamic,
-                        responsive, and user-friendly websites. My expertise lies in front-end development, allowing me
-                        to build web solutions that not only look great but also perform seamlessly. I'm passionate
-                        about staying updated with the latest web technologies and continuously improving my craft to
-                        deliver high-quality digital experiences.</p>
-                    <!-- <a href="#">Know More</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Designer</h2>
-                    <p>With 2 months of experience in UI/UX design, I've started to develop a keen eye for creating
-                        intuitive and visually appealing interfaces. My focus has been on understanding user needs and
-                        translating them into designs that enhance the overall user experience. Though I'm still early
-                        in my journey, I'm committed to growing my skills and staying up-to-date with the latest design
-                        trends to create impactful digital products.</p>
-                    <!-- <a href="#">Know More</a> -->
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Designer</h2>
-                    <p>With one month of focused experience in app design, I've quickly developed a strong foundation in
-                        creating intuitive and visually appealing user interfaces. My work emphasizes usability and
-                        aesthetics, ensuring that the apps I design are both functional and engaging. I'm eager to
-                        expand my skills and stay updated with the latest design trends to create impactful user
-                        experiences.
-
-                    </p>
-                    <!-- <a href="#">Know More</a> -->
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="subtitel">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              With a year of hands-on experience in web development, I've honed
+              my skills in creating dynamic, responsive, and user-friendly
+              websites. My expertise lies in front-end development, allowing me
+              to build web solutions that not only look great but also perform
+              seamlessly. I'm passionate about staying updated with the latest
+              web technologies and continuously improving my craft to deliver
+              high-quality digital experiences.
+            </p>
+            <!-- <a href="#">Know More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Designer</h2>
+            <p>
+              With 2 months of experience in UI/UX design, I've started to
+              develop a keen eye for creating intuitive and visually appealing
+              interfaces. My focus has been on understanding user needs and
+              translating them into designs that enhance the overall user
+              experience. Though I'm still early in my journey, I'm committed to
+              growing my skills and staying up-to-date with the latest design
+              trends to create impactful digital products.
+            </p>
+            <!-- <a href="#">Know More</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Designer</h2>
+            <p>
+              With one month of focused experience in app design, I've quickly
+              developed a strong foundation in creating intuitive and visually
+              appealing user interfaces. My work emphasizes usability and
+              aesthetics, ensuring that the apps I design are both functional
+              and engaging. I'm eager to expand my skills and stay updated with
+              the latest design trends to create impactful user experiences.
+            </p>
+            <!-- <a href="#">Know More</a> -->
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- --------------Portfolio----------------- -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="subtitel">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Websites</h3>
-                        <p>E-commerce and this portfolio is developed by me and Some other examples are in Link</p>
-                        <a href="https://jatinverma9728.github.io/one-place/"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>UI/UX Work</h3>
-                        <p>E-commerce and this portfolio Website is Designed by me and Some other examples are in Link</p>
-                        <a href="https://jatinverma9728.github.io/one-place/"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Online Shoppping Website</h3>
-                        <p>Under-Process</p>
-                        <a href="https://jatinverma9728.github.io/one-place/"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-
-                </div>
+      <div class="container">
+        <h1 class="subtitel">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Websites</h3>
+              <p>
+                E-commerce and this portfolio is developed by me and Some other
+                examples are in Link
+              </p>
+              <a href="https://one-place-one.vercel.app/index.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
-            <!-- <a href="#" class="btn">See Nore</a> -->
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>UI/UX Work</h3>
+              <p>
+                E-commerce and this portfolio Website is Designed by me and Some
+                other examples are in Link
+              </p>
+              <a href="https://one-place-one.vercel.app/index.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Online Shoppping Website</h3>
+              <p>Under-Process</p>
+              <a href="https://jatinverma9728.github.io/one-place/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <!-- <a href="#" class="btn">See Nore</a> -->
+      </div>
     </div>
 
     <!-- ---------------------Mini Projects---------------- -->
 
     <div class="body" id="projects">
-        <div class="container swiper">
-            <h1 class="subtitel">My Projects</h1>
-            <div class="slider-wrapper">
-                <div class="card-list swiper-wrapper">
-                    <div class="card-item swiper-slide">
-                        <img src="logo_2-removebg-preview.png" alt="BG Image" class="user-image">
-                        <h2 class="user-name">One Place</h2>
-                        <p class="user-profession">
-                        <div class="read-more-container">
-                            <!-- Card 1 -->
-                            <div class="paracontainer">
-                                <p>OnePlace is a service-based platform that connects users with professionals offering a range of services, including salon treatments, home cleaning,
-                                    <span class="read-more-text">
-                                        AC repair, plumbing, and more. The website provides an intuitive user interface and ensures seamless booking experiences for customers.
-
-                                        Technologies Used:
-                                        
-                                        Frontend: HTML, CSS, JavaScript
-                                        Responsive Design: Media queries for adaptable layouts across devices
-                                        Libraries: Swiper JS (for image sliders), Modals for service booking options
-                                        UI Components: Custom chatbox with slide-up animation, responsive navbar, and notification section
-                                        Tools: Figma for UI/UX design, VS Code for development
-                                    </span>
-                                </p>
-                                <span class="read-more-btn">Read More...</span>
-                            </div>
-                            <button class="message-button"><a href= "https://jatinverma9728.github.io/one-place/"
-                                    style="text-decoration: none; color: #030728;" target="_blank">View</a></button>
-                        </div>
-
-                    </div>
-
-                    <div class="card-item swiper-slide">
-                        <img src="rockpaperimages/lo.jpeg" alt="BG Image" class="user-image">
-                        <h2 class="user-name">Rock, Paper, Scissors</h2>
-                        <p class="user-profession"> <!-- Card 2 -->
-                        <div class="paracontainer">
-                            <p>This is a simple yet engaging Rock, Paper, Scissors game built using HTML, CSS, and
-                                JavaScript. In this game
-                                <span class="read-more-text">
-                                    , players choose one of three options: rock, paper, or scissors. The computer also
-                                    randomly selects one of these options. The game then compares the player's choice
-                                    with the computer's choice to determine the winner based on the classic rules
-                                </span>
-                            </p>
-                            <span class="read-more-btn">Read More...</span>
-                        </div>
-                        </p>
-                        <button class="message-button"><a href="https://one-place-one.vercel.app/index.html"
-                                style="text-decoration: none; color: #030728;" target="_blank">View</a></button>
-                    </div>
-                    <div class="card-item swiper-slide">
-                        <img src="images/Under Maintance.jpg" alt="BG Image" class="user-image">
-                        <h2 class="user-name">Under Maintance</h2>
-                        <p class="user-profession"> <!-- Card 3 -->
-                        <div class="paracontainer">
-                            <p>Short description for card 2.
-                                <span class="read-more-text">
-                                    Additional content for card 2 that is hidden initially.
-                                </span>
-                            </p>
-                            <span class="read-more-btn">Read More...</span>
-                        </div>
-                        </p>
-                        <button class="message-button">View</button>
-                    </div>
-                    <div class="card-item swiper-slide">
-                        <img src="images/Under Maintance.jpg" alt="BG Image" class="user-image">
-                        <h2 class="user-name">Under Maintance</h2>
-                        <p class="user-profession"> <!-- Card 2 -->
-                        <div class="paracontainer">
-                            <p>Short description for card 2.
-                                <span class="read-more-text">
-                                    Additional content for card 2 that is hidden initially.
-                                </span>
-                            </p>
-                            <span class="read-more-btn">Read More...</span>
-                        </div>
-                        </p>
-                        <button class="message-button">View</button>
-                    </div>
-
+      <div class="container swiper">
+        <h1 class="subtitel">My Projects</h1>
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img
+                src="logo_2-removebg-preview.png"
+                alt="BG Image"
+                class="user-image"
+              />
+              <h2 class="user-name">One Place</h2>
+              <p class="user-profession"></p>
+              <div class="read-more-container">
+                <!-- Card 1 -->
+                <div class="paracontainer">
+                  <p>
+                    OnePlace is a service-based platform that connects users
+                    with professionals offering a range of services, including
+                    salon treatments, home cleaning,
+                    <span class="read-more-text">
+                      AC repair, plumbing, and more. The website provides an
+                      intuitive user interface and ensures seamless booking
+                      experiences for customers. Technologies Used: Frontend:
+                      HTML, CSS, JavaScript Responsive Design: Media queries for
+                      adaptable layouts across devices Libraries: Swiper JS (for
+                      image sliders), Modals for service booking options UI
+                      Components: Custom chatbox with slide-up animation,
+                      responsive navbar, and notification section Tools: Figma
+                      for UI/UX design, VS Code for development
+                    </span>
+                  </p>
+                  <span class="read-more-btn">Read More...</span>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-slide-button swiper-button-prev"></div>
-                <div class="swiper-slide-button swiper-button-next"></div>
+                <button class="message-button">
+                  <a
+                    href="https://jatinverma9728.github.io/one-place/"
+                    style="text-decoration: none; color: #030728"
+                    target="_blank"
+                    >View</a
+                  >
+                </button>
+              </div>
             </div>
-        </div>
-    </div>
 
+            <div class="card-item swiper-slide">
+              <img
+                src="rockpaperimages/lo.jpeg"
+                alt="BG Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Rock, Paper, Scissors</h2>
+              <p class="user-profession"><!-- Card 2 --></p>
+              <div class="paracontainer">
+                <p>
+                  This is a simple yet engaging Rock, Paper, Scissors game built
+                  using HTML, CSS, and JavaScript. In this game
+                  <span class="read-more-text">
+                    , players choose one of three options: rock, paper, or
+                    scissors. The computer also randomly selects one of these
+                    options. The game then compares the player's choice with the
+                    computer's choice to determine the winner based on the
+                    classic rules
+                  </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+              </div>
+              <button class="message-button">
+                <a
+                  href="https://one-place-one.vercel.app/index.html"
+                  style="text-decoration: none; color: #030728"
+                  target="_blank"
+                  >View
+                </a>
+              </button>
+            </div>
+            <div class="card-item swiper-slide">
+              <img
+                src="images/Under Maintance.jpg"
+                alt="BG Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Under Maintance</h2>
+              <p class="user-profession"><!-- Card 3 --></p>
+              <div class="paracontainer">
+                <p>
+                  Short description for card 2.
+                  <span class="read-more-text">
+                    Additional content for card 2 that is hidden initially.
+                  </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+              </div>
+
+              <button class="message-button">View</button>
+            </div>
+            <div class="card-item swiper-slide">
+              <img
+                src="images/Under Maintance.jpg"
+                alt="BG Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Under Maintance</h2>
+              <p class="user-profession"><!-- Card 2 --></p>
+              <div class="paracontainer">
+                <p>
+                  Short description for card 2.
+                  <span class="read-more-text">
+                    Additional content for card 2 that is hidden initially.
+                  </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+              </div>
+
+              <button class="message-button">View</button>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
 
     <!-- ----------------------Contact--------------------- -->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitel">Contact Me</h1>
-                    <p> <i class="fa-solid fa-envelope"></i>vermajatin477@gmail.com</p>
-                    <p> <i class="fa-solid fa-square-phone"></i>9728349291</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/dashboard" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://x.com/JatinVerma9728" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/iamjatin_vrma?igsh=aWU5MHFwcXY4Z2Vl" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/jatin-verma-448600291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/resume.pdf" download class="btn btn2">Downlode My Resume</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitel">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>vermajatin477@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>9728349291</p>
+            <div class="social-icons">
+              <a href="https://github.com/dashboard" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://x.com/JatinVerma9728" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/iamjatin_vrma?igsh=aWU5MHFwcXY4Z2Vl"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/jatin-verma-448600291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
+            <a href="images/resume.pdf" download class="btn btn2"
+              >Downlode My Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright Jatin Verma.<i class="fa-solid fa-heart"></i></p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Jatin Verma.<i class="fa-solid fa-heart"></i></p>
+      </div>
     </div>
 
     <!-- ----------mouse---------- -->
@@ -295,17 +398,20 @@
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cousor-outline" data-cursor-outline></div>
 
-
-
     <!-- ------------------------SCRIPT SECTION------------------------- -->
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="sitejs/scrollanimation.js"></script>
     <script src="sitejs/experience,edu.js"></script>
     <script src="sitejs/googlesheetfetch.js"></script>
@@ -314,7 +420,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="imagesliderscript.js"></script>
     <script src="para.js"></script>
-
-</body>
-
+  </body>
 </html>
