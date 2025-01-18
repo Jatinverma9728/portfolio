@@ -9,8 +9,8 @@ tl.from("#header img", {
 tl.from("#header li", {
   y: -30,
   opacity: 0,
-  duration: 0.5,
-  stagger: 0.3,
+  duration: 0.2,
+  stagger: 0.2,
 });
 tl.from(".header-text span", {
   x: -300,
@@ -36,7 +36,7 @@ gsap.from("#about", {
   scrollTrigger: {
     opacity:1,
     // markers: true,
-    start: "top 50%",
+    start: "top 80%",
     end: "top -50%",
     scrub: 2,
     pin: true,

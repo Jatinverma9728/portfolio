@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("images/bg2.png") center/cover;
+  background: #000;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -38,6 +38,7 @@
   border-radius: 50%;
   margin-bottom: 40px;
   border: 3px solid white;
+  background: #ffffff;
   padding: 4px;
 }
 

@@ -1,16 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box1;
-  font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  font-family: syne, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   background: #080808;
-  color: fff;
+  color: #fff;
   overflow-x: hidden;
+  font-family: syne;
 }
 #header {
   width: 100%;
@@ -74,7 +75,8 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ababab;
-  background: url(images/bg.jpg) center/cover;
+  height: 100%;
+  /* background: url(images/bg.jpg) center/cover; */
   /* animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%; */
@@ -83,6 +85,7 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 .about-col-1 {
   /* flex-basis: 35%; */
@@ -98,8 +101,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 {
-  flex-basis: 50%;
-  margin: 0px 93px;
+  width: 60%;
 }
 .subtitel {
   font-size: 60px;
@@ -137,7 +139,7 @@ nav ul li a:hover::after {
   margin: 10px 0;
 }
 .tab-contents ul li span {
-  color: #b54569;
+  color: #ac093d;
   font-size: 14px;
 }
 
@@ -152,10 +154,10 @@ nav ul li a:hover::after {
 
 #services {
   padding: 30px 0;
-  background: url(images/bg1.png) center/cover;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  /* background: url(images/bg1.png) center/cover; */
+  /* animation: appear linear; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0% cover 40%; */
 }
 .services-list {
   display: grid;
@@ -170,7 +172,7 @@ nav ul li a:hover::after {
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
-  transition: backgroung 0.5s, transform 0.5s;
+  transition: background 0.5s, transform 0.5s;
 }
 .services-list div i {
   font-size: 50px;
@@ -198,10 +200,10 @@ nav ul li a:hover::after {
 /* ----------Portfolio---------*/
 #portfolio {
   padding: 50px 0;
-  background: url(images/bg3.png) center/cover;
+  /* background: url(images/bg3.png) center/cover; */
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 20%;
 }
 .work-list {
   display: grid;
@@ -291,7 +293,7 @@ nav ul li a:hover::after {
   color: white;
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 20%;
 }
 
 .contact-left {
@@ -351,14 +353,16 @@ form .btn2 {
 }
 
 .copyright {
-  width: 100%;
-  color: rgb(255, 37, 37);
-  padding: 25px 0;
-  display: flex;
-  text-align: center;
   background: #262626;
-  font-weight: 300;
-  margin-top: 20px;
+  color: white;
+  text-align: center;
+  width: 100vw;
+  line-height: 50px;
+}
+
+.copyright p {
+  color: white;
+  width: 100%;
 }
 .copyright i {
   color: #ff004f;
@@ -397,11 +401,11 @@ nav .fa-solid {
     position: fixed;
     top: 0;
     right: 0;
-    width: 200px;
+    width: 0px;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
-    transition: right 0.5s;
+    transition: right 0.3s ease;
   }
   nav ul li {
     display: block;
@@ -446,10 +450,9 @@ nav .fa-solid {
   }
   .copyright {
     font-size: 14px;
+    height: 50px;
   }
-  .body .subtitel {
-    margin-left: 70px;
-  }
+
   #page2 {
     display: none;
   }
@@ -468,11 +471,11 @@ nav .fa-solid {
 body {
   cursor: none;
 }
-/* .cursor-dot {
+.cursor-dot {
   width: 5px;
   height: 5px;
   background-color: rgb(255, 255, 255);
-} */
+}
 .cousor-outline {
   width: 20px;
   height: 20px;
